@@ -21,7 +21,7 @@
 #include "uButton.h"
 
 
-uButton::uButton(int pinNum, int normState){	// input pin, debounce time, input normal state
+uButton::uButton(int pinNum, int normState){	// input pin, input normal state
 
 	pin = pinNum;
 
@@ -55,7 +55,7 @@ bool uButton::check()
 		return true;	// only return true once per press
 	}
 
-	stateLast = stateNow; // this only executes the first time a state change is observed
+	stateLast = stateNow; // this only executes when a state change is observed
 	return false;
 }
 
