@@ -20,7 +20,6 @@
 	OBJECT CREATION:
 	Button ButtonObject(pin, switch normal state)
 	
-
 */
 
 #ifndef uButton_h
