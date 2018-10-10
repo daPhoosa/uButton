@@ -1,7 +1,7 @@
 /*
-	Button library
-	Phillip Schmidt, 02/17
-	v1.0
+   Button library
+   Phillip Schmidt, 02/17
+   v1.0
 
          This program is free software: you can redistribute it and/or modify
          it under the terms of the GNU General Public License as published by
@@ -16,29 +16,29 @@
          You should have received a copy of the GNU General Public License
          along with this program.  If not, see <http://www.gnu.org/licenses/>
 
-			
-	OBJECT CREATION:
-	Button ButtonObject(pin, switch normal state)
-	
+         
+   OBJECT CREATION:
+   Button ButtonObject(pin, switch normal state)
+   
 */
 
 #ifndef uButton_h
-	#define uButton_h
+   #define uButton_h
 
-	#include <arduino.h>
+   #include <arduino.h>
 
-	class uButton
-	{
-		public:
-			uButton(int pin, int normState);
-			
-			bool check();
+   class uButton
+   {
+      public:
+         uButton(int pin, int normState);
+         
+         bool check();
 
 
-		private:
+      private:
 
-			int pin;
-			bool stateLast, switchDown, state, notRun;
-	};
+         int pin;
+         bool stateLast, switchDown, state, notRun;
+   };
 
 #endif
